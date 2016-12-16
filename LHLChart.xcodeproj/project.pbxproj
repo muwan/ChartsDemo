@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B7AC5E91A51A45B69A18FE9 /* Pods_LHLChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7646EF67947594C7F6947F /* Pods_LHLChart.framework */; };
 		B70B63F81DF6A3DF00DB4CEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B70B63F71DF6A3DF00DB4CEE /* main.m */; };
 		B70B63FB1DF6A3DF00DB4CEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B70B63FA1DF6A3DF00DB4CEE /* AppDelegate.m */; };
 		B70B63FE1DF6A3DF00DB4CEE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70B63FD1DF6A3DF00DB4CEE /* ViewController.m */; };
 		B70B64011DF6A3DF00DB4CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70B63FF1DF6A3DF00DB4CEE /* Main.storyboard */; };
 		B70B64031DF6A3DF00DB4CEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70B64021DF6A3DF00DB4CEE /* Assets.xcassets */; };
 		B70B64061DF6A3DF00DB4CEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70B64041DF6A3DF00DB4CEE /* LaunchScreen.storyboard */; };
+		B70B64141DF79B2400DB4CEE /* bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70B64131DF79B2400DB4CEE /* bridge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD7646EF67947594C7F6947F /* Pods_LHLChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LHLChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70B63F31DF6A3DF00DB4CEE /* LHLChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHLChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70B63F71DF6A3DF00DB4CEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B70B63F91DF6A3DF00DB4CEE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,10 @@
 		B70B64021DF6A3DF00DB4CEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B70B64051DF6A3DF00DB4CEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B70B64071DF6A3DF00DB4CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B70B64121DF79B2400DB4CEE /* LHLChart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LHLChart-Bridging-Header.h"; sourceTree = "<group>"; };
+		B70B64131DF79B2400DB4CEE /* bridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bridge.swift; sourceTree = "<group>"; };
+		C06BBAA91CDE303C0743B462 /* Pods-LHLChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHLChart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LHLChart/Pods-LHLChart.debug.xcconfig"; sourceTree = "<group>"; };
+		C202A5EF248154F25964FCA7 /* Pods-LHLChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHLChart.release.xcconfig"; path = "Pods/Target Support Files/Pods-LHLChart/Pods-LHLChart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7AC5E91A51A45B69A18FE9 /* Pods_LHLChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C4C30EE010129F3F45B3EB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD7646EF67947594C7F6947F /* Pods_LHLChart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B70B63EA1DF6A3DF00DB4CEE = {
 			isa = PBXGroup;
 			children = (
 				B70B63F51DF6A3DF00DB4CEE /* LHLChart */,
 				B70B63F41DF6A3DF00DB4CEE /* Products */,
+				B78AD354E2FBFDF68CADEDBF /* Pods */,
+				0C4C30EE010129F3F45B3EB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				B70B63F91DF6A3DF00DB4CEE /* AppDelegate.h */,
+				B70B64131DF79B2400DB4CEE /* bridge.swift */,
 				B70B63FA1DF6A3DF00DB4CEE /* AppDelegate.m */,
 				B70B63FC1DF6A3DF00DB4CEE /* ViewController.h */,
 				B70B63FD1DF6A3DF00DB4CEE /* ViewController.m */,
@@ -67,6 +86,7 @@
 				B70B64041DF6A3DF00DB4CEE /* LaunchScreen.storyboard */,
 				B70B64071DF6A3DF00DB4CEE /* Info.plist */,
 				B70B63F61DF6A3DF00DB4CEE /* Supporting Files */,
+				B70B64121DF79B2400DB4CEE /* LHLChart-Bridging-Header.h */,
 			);
 			path = LHLChart;
 			sourceTree = "<group>";
@@ -79,6 +99,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B78AD354E2FBFDF68CADEDBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C06BBAA91CDE303C0743B462 /* Pods-LHLChart.debug.xcconfig */,
+				C202A5EF248154F25964FCA7 /* Pods-LHLChart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B70B640A1DF6A3DF00DB4CEE /* Build configuration list for PBXNativeTarget "LHLChart" */;
 			buildPhases = (
+				14C8AB88905F23571C947F7E /* [CP] Check Pods Manifest.lock */,
 				B70B63EF1DF6A3DF00DB4CEE /* Sources */,
 				B70B63F01DF6A3DF00DB4CEE /* Frameworks */,
 				B70B63F11DF6A3DF00DB4CEE /* Resources */,
+				25796CF972E040D5614C5AD2 /* [CP] Embed Pods Frameworks */,
+				31A6B04FA9A6A3E4E2503DA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -111,6 +143,7 @@
 					B70B63F21DF6A3DF00DB4CEE = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = YYY2FTXY4S;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -146,11 +179,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14C8AB88905F23571C947F7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		25796CF972E040D5614C5AD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHLChart/Pods-LHLChart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31A6B04FA9A6A3E4E2503DA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHLChart/Pods-LHLChart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B70B63EF1DF6A3DF00DB4CEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70B64141DF79B2400DB4CEE /* bridge.swift in Sources */,
 				B70B63FE1DF6A3DF00DB4CEE /* ViewController.m in Sources */,
 				B70B63FB1DF6A3DF00DB4CEE /* AppDelegate.m in Sources */,
 				B70B63F81DF6A3DF00DB4CEE /* main.m in Sources */,
@@ -197,6 +279,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -244,6 +327,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -269,25 +353,34 @@
 		};
 		B70B640B1DF6A3DF00DB4CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06BBAA91CDE303C0743B462 /* Pods-LHLChart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YYY2FTXY4S;
 				INFOPLIST_FILE = LHLChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhimakaiyuan.LHLChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LHLChart/LHLChart-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		B70B640C1DF6A3DF00DB4CEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C202A5EF248154F25964FCA7 /* Pods-LHLChart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YYY2FTXY4S;
 				INFOPLIST_FILE = LHLChart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhimakaiyuan.LHLChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LHLChart/LHLChart-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -310,6 +403,7 @@
 				B70B640C1DF6A3DF00DB4CEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

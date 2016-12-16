@@ -1,0 +1,6 @@
+framework module Pods_LHLChart {
+  umbrella header "Pods-LHLChart-umbrella.h"
+
+  export *
+  module * { export * }
+}
